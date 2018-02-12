@@ -1,0 +1,29 @@
+hash: 71297c3363163c1751dd890546a9949252f7facff130cad99f0a1095b21c8986
+updated: 2018-02-02T12:25:14.772796831Z
+imports:
+- name: code.cloudfoundry.org/lager
+  version: 0bfa98e49e7a976af91e918d47978f07c00b081f
+- name: github.com/cloudfoundry-incubator/credhub-cli
+  version: 0a87527a42a5e8b88c48458bf357100814fec7b6
+  subpackages:
+  - credhub
+  - credhub/auth
+  - credhub/auth/uaa
+  - credhub/credentials
+  - credhub/credentials/generate
+  - credhub/credentials/values
+  - credhub/permissions
+  - credhub/server
+  - errors
+  - util
+- name: github.com/gorilla/context
+  version: 08b5f424b9271eedf6f9f0ce86cb9396ed337a42
+- name: github.com/gorilla/mux
+  version: c0091a029979286890368b4c7b301261e448e242
+- name: github.com/hashicorp/go-version
+  version: 4fe82ae3040f80a03d04d2cccb5606a626b8e1ee
+- name: github.com/pivotal-cf/brokerapi
+  version: 35946a0079bda144d0c9ed68df36899451f90209
+  subpackages:
+  - auth
+testImports: []

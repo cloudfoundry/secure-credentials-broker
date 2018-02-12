@@ -1,0 +1,11 @@
+applications:
+- name: secure-credentials-broker
+  instances: 1
+  memory: 512M
+  disk_quota: 512M
+  random-route: true
+  env:
+    SKIP_TLS_VALIDATION: true
+    CREDHUB_SERVER: https://credhub.service.cf.internal:8844
+    CREDHUB_CLIENT: <CHANGE_ME>
+    CREDHUB_SECRET: <CHANGE_ME>

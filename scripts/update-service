@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -x
+
+curl http://admin:admin@localhost:8080/v2/service_instances/abcd1234?accepts_incomplete=true -d '{
+  "service_id": "simple-id",
+  "plan_id": "simple-plan",
+  "context": {
+    "platform": "cloudfoundry",
+    "some_field": "some-contextual-data"
+  },
+  "organization_guid": "org-guid-here",
+  "space_guid": "space-guid-here",
+  "parameters": {
+    "username": "new-foo",
+    "password": "new-bar"
+  }
+}' -X PATCH -H "X-Broker-API-Version: 2.13" -H "Content-Type: application/json"
+

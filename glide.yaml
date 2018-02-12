@@ -1,0 +1,11 @@
+package: github.com/ablease/credhub-broker
+import:
+- package: code.cloudfoundry.org/lager
+- package: github.com/cloudfoundry-incubator/credhub-cli
+  version: ^1.5.3
+  subpackages:
+  - credhub
+  - credhub/auth
+  - credhub/credentials/values
+  - util
+- package: github.com/pivotal-cf/brokerapi

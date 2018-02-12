@@ -1,4 +1,4 @@
-package: github.com/ablease/credhub-broker
+package: github.com/cloudfoundry/secure-credentials-broker
 import:
 - package: code.cloudfoundry.org/lager
 - package: github.com/cloudfoundry-incubator/credhub-cli

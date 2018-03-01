@@ -8,7 +8,7 @@ The service broker stores the user-provided configuration parameters in CredHub,
 # Using the sample broker
 ## Creating a UAA client with credhub permissions
 
-The broker is currently configured to use a UAA client for authentication. You must first login with uaa admin credentials to create a UAA client that has credhub read and write access.
+* The broker is currently configured to use a UAA client for authentication. You must first login with uaa admin credentials to create a UAA client that has credhub read and write access.
 
 ```
 $ uaac target https://<your-uaa-domain>

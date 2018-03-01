@@ -1,11 +1,11 @@
 
-#Secure Application Credentials Broker
+# Secure Application Credentials Broker
 
 This broker is prototype application service broker that lets user-provided credentials to be securely stored in CredHub for applications to use. 
 The service broker stores the user-provided configuration parameters in CredHub, and returns a CredHub reference back to the platform.
 
 
-#Using the sample broker
+# Using the sample broker
 ## Creating a UAA client with credhub permissions
 
 The broker is currently configured to use a UAA client for authentication. You must first login with uaa admin credentials to create a UAA client that has credhub read and write access.

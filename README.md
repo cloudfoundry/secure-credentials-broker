@@ -39,7 +39,6 @@ signup redirect url (url):
   required_user_groups:
   lastmodified: 1519917340000
   id: secure-credentials-broker
-
 ```
 
 ## Configuring the broker
@@ -49,7 +48,6 @@ signup redirect url (url):
 ```
 CREDHUB_CLIENT: secure-credentials-broker
 CREDHUB_SECRET: my-secret
-
 ```
 
 * Target and login to CF, creating appropriate orgs and spaces.
@@ -57,9 +55,6 @@ CREDHUB_SECRET: my-secret
 ```
 $ cf api <your-cf-api-url-goes-here>
 $ cf login
-API endpoint: https://api.cf.security.cf-app.com
-Email> admin
-Password> <password>
 $ cf create-org myOrg
 $ cf target -o myOrg
 $ cf create-space mySpace
@@ -76,7 +71,6 @@ $ cf target -s mySpace
     "ports": "8844"
   }
 ]
-
 ```
 
 * Push the service broker application, and then register it to CF as a broker. 
@@ -96,7 +90,6 @@ $ cf create-service myInstance default myInstance -c '{"myJsonKey":"myJsonValue"
 $ cf push <your-app-that-talks-to broker> 
 $ cf bind-service myApp myInstance
 $ cf restage myApp 
-
 ```
 
 * Assuming that you are running credhub in assisted-mode your application should be able to access the JSON used when creating the service-instance.  

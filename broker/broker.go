@@ -68,6 +68,7 @@ func (credhubServiceBroker *CredhubServiceBroker) Services(context context.Conte
 				SupportUrl:          "",
 				ImageUrl:            "",
 				ProviderDisplayName: "",
+				Shareable:           boolPointer(true),
 			},
 			Tags: []string{
 				"credhub",
@@ -222,4 +223,8 @@ func (credhubServiceBroker *CredhubServiceBroker) deletePermissions(credName str
 	}
 
 	return nil
+}
+
+func boolPointer(b bool) *bool {
+	return &b
 }

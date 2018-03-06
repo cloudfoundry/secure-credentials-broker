@@ -1,0 +1,21 @@
+addons:
+- include:
+    jobs:
+    - name: rep
+      release: diego
+  jobs:
+  - name: bosh-dns-aliases-ext
+    properties:
+      aliases:
+      - domain: uaa.service.cf.internal
+        targets:
+        - deployment: <CHANGE-ME>
+          domain: bosh
+          instance_group: uaa
+          network: <CHANGE-ME>
+          query: '*'
+    release: bosh-dns-aliases-ext
+  name: bosh-dns-aliases-ext
+releases:
+- name: bosh-dns-aliases-ext
+  version: 0.0.1

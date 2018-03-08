@@ -98,8 +98,8 @@ $ cf enable-service-access secure-credentials -p default -o myOrg
 
 * Create a service instance of your broker and bind to the application that is meant to talk to the broker
 ```
-$ cf create-service myInstance default myInstance -c '{"myJsonKey":"myJsonValue"}'
-$ cf push <your-app-that-talks-to broker> 
+$ cf create-service secure-credentials default myInstance -c '{"myJsonKey":"myJsonValue"}'
+$ cf push <your-app-that-talks-to-broker> 
 $ cf bind-service myApp myInstance
 $ cf restage myApp 
 ```

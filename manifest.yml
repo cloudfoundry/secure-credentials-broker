@@ -1,11 +1,16 @@
 applications:
 - name: secure-credentials-broker
   instances: 1
-  memory: 512M
-  disk_quota: 512M
-  random-route: true
+  memory: 256M
+  disk_quota: 256M
+  buildpack: binary_buildpack
+  path: bin
+  command: ./secure-credentials-broker
+  #random-route: true
   env:
     SKIP_TLS_VALIDATION: true
     CREDHUB_SERVER: https://credhub.service.cf.internal:8844
-    CREDHUB_CLIENT: <CHANGE_ME>
-    CREDHUB_SECRET: <CHANGE_ME>
+    CREDHUB_CLIENT: secure-credentials-broker
+    CREDHUB_SECRET: my-secret
+    BROKER_AUTH_USERNAME: user
+    BROKER_AUTH_PASSWORD: password

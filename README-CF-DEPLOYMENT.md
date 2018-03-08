@@ -111,7 +111,6 @@ $ uaac client add secure-credentials-broker -i
 
 ```
 $ git clone https://github.com/brightzheng100/secure-credentials-broker.git
-$ cd secure-credentials-broker
 ```
 
 2. Log into Cloud Foundry
@@ -130,6 +129,7 @@ $ cf target -o dev -s dev
 4. Setup ASG
 
 ```
+$ cd secure-credentials-broker
 $ cat <<EOF > asg.json
 [
     {

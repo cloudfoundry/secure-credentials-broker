@@ -10,7 +10,7 @@ applications:
   env:
     SKIP_TLS_VALIDATION: true
     CREDHUB_SERVER: https://credhub.service.cf.internal:8844
-    CREDHUB_CLIENT: secure-credentials-broker
-    CREDHUB_SECRET: my-secret
-    BROKER_AUTH_USERNAME: user
-    BROKER_AUTH_PASSWORD: password
+    CREDHUB_CLIENT: <CHANGE-ME>
+    CREDHUB_SECRET: <CHANGE-ME>
+    BROKER_AUTH_USERNAME: <CHANGE-ME>
+    BROKER_AUTH_PASSWORD: <CHANGE-ME>

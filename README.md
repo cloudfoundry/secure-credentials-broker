@@ -84,8 +84,6 @@ $ cf target -o myOrg -s mySpace
 Note, currently the broker credentials, and the service name, and plan are hardcoded in the broker code.
 
 ```
-$ mkdir bin
-$ GOOS=linux go build -o ./bin/secure-credentials-broker
 $ cf push
 
 $ cf create-security-group secure-service-credentials asg.json

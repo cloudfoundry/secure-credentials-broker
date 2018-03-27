@@ -1,3 +1,4 @@
+**NB:** This service broker is provided as a proof-of-concept and as a practical example for integrating service brokers with CredHub. It is not actively maintained or intended for deployment or use in production environments.
 
 # Secure Application Credentials Broker
 
